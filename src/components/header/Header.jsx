@@ -61,7 +61,9 @@ const Header = () => {
                         </ul>
                         <ul className='Header__menu'>
                             <li>
-                                <a href="#">Цены</a>
+                                <Link to="price" style={{ textDecoration: 'none' }}>
+                                    <a className={pathname.includes('price') ? 'Header__menu-active-link' : ''}>Цены</a>
+                                </Link>
                             </li>
                             <li>
                                 <a href="#">Food зона</a>
