@@ -24,7 +24,7 @@ a {
 }
 
 .Main__title-cont {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .Main__overtitle {
@@ -42,8 +42,7 @@ a {
   color: #ffffff;
   font-weight: 700;
   text-transform: uppercase;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin-top: 15px;
   /* font-family: 'Press Start 2P', cursive; */
 }
 

@@ -1,0 +1,32 @@
+.Advantage {
+    padding: 0px 15px 100px 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.Advantage__menu {
+    text-align: initial;
+}
+
+.Advantage__menu li {
+    padding: 10px 10px 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    background-color: #000000;
+    transition: all .3s;
+}
+
+.Advantage__menu li:hover {
+    background-color: #3786ff;
+}
+
+.css-i4bv87-MuiSvgIcon-root {
+    margin-left: 20px;
+}
