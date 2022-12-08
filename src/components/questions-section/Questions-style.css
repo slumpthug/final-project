@@ -1,0 +1,21 @@
+.SimpleAccordion {
+    padding: 0px 15px 100px 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.css-o4b71y-MuiAccordionSummary-content {
+    display: flex;
+    align-items: center;
+}
+
+.MuiAccordion-gutters {
+    background: url('file:///C:/Users/User/Desktop/Front-end/makets/project-maket/gamon/images/background/6.png') no-repeat;
+    /* background-position: center; */
+}
+
+.MuiAccordion-gutters:hover .css-1ppb0z7-MuiTypography-root {
+    color: #3786ff !important;
+    transition: all .3s;
+}
