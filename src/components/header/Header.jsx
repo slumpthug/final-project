@@ -54,7 +54,9 @@ const Header = () => {
                                 <a href="#">Галерея</a>
                             </li>
                             <li>
-                                <a href="#">Правила</a>
+                                <Link to="rules" style={{ textDecoration: 'none' }}>
+                                    <a className={pathname.includes('rulespage') ? 'Header__menu-active-link' : ''}>Правила</a>
+                                </Link>
                             </li>
                         </ul>
                         <ul className='Header__menu'>
