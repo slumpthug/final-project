@@ -1,7 +1,11 @@
 import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import './Header-style.css';
 
+
 const Header = () => {
+    const { pathname } = useLocation();
+
     return (
         <header className="Header" id='up'>
             <div className="Header-top">
@@ -42,7 +46,9 @@ const Header = () => {
                     <div className='Header__menu-cont'>
                         <ul className='Header__menu'>
                             <li>
-                                <a href="#">О нас</a>
+                                <Link to="aboutus" style={{ textDecoration: 'none' }}>
+                                    <a className={pathname.includes('aboutus') || pathname === '/' ? 'Header__menu-active-link' : ''}>О нас</a>
+                                </Link>
                             </li>
                             <li>
                                 <a href="#">Галерея</a>
