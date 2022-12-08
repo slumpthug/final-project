@@ -52,7 +52,7 @@ const Header = () => {
                             </li>
                             <li>
                                 <Link to="booking" style={{ textDecoration: 'none' }}>
-                                    <a className={pathname.includes('booking') || pathname === '/' ? 'Header__menu-active-link' : ''}>Бронь</a>
+                                    <a className={pathname.includes('booking') ? 'Header__menu-active-link' : ''}>Бронь</a>
                                 </Link>
                             </li>
                             <li>

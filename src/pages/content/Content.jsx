@@ -9,6 +9,7 @@ import PricePage from '../price-page/PricePage';
 import FoodZone from '../foodZone-page/FoodZonePage';
 import ContactsPage from '../contacts-page/ContactsPage';
 import BookingPage from '../booking-page/BookingPage';
+import Reg from '../../components/reg/Reg';
 
 const Content = () => {
     return (
@@ -23,6 +24,7 @@ const Content = () => {
                 <Route path='/price' element={ <PricePage/> } />
                 <Route path='/foodzone' element={ <FoodZone/> } />
                 <Route path='/contacts' element={ <ContactsPage/> } />
+                {/* <Route path='/reg' element={ <Reg/> }/> */}
             </Routes>
             <Footer/>
         </div>
