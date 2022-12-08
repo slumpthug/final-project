@@ -1,51 +1,51 @@
-// import React, { useState } from 'react';
-// import { useDispatch } from 'react-redux';
-// import { AuthRegister, Register } from '../../redux/reducer/RegisSlice';
+import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { AuthRegister, Register } from '../../redux/reducer/RegisSlice';
 
-// const Reg = () => {
-//     const dispatch = useDispatch();
-//     const [state, setState] = useState({
-//         username: "",
-//         password: "",
-//         password2: "",
-//         phone_number: "",
-//     })
+const Reg = () => {
+    const dispatch = useDispatch();
+    const [state, setState] = useState({
+        username: "",
+        password: "",
+        password2: "",
+        phone_number: "",
+    })
 
-//     const [authVAlue, setAuthValue] = useState({
-//         username: "",
-//         password: "",
-//     })
+    const [authVAlue, setAuthValue] = useState({
+        username: "",
+        password: "",
+    })
 
-//     return (
-//         <>
-//         <form className='Reg'>
-//             <input type="text" style={{color: 'black'}} value={state.username} onChange={(e) => setState({...state, username: e.target.value})} />
-//             <input type="text" style={{color: 'black'}} value={state.password} onChange={(e) => setState({...state, password: e.target.value})} />
-//             <input type="text" style={{color: 'black'}} value={state.password2} onChange={(e) => setState({...state, password2: e.target.value})} />
-//             <input type="text" style={{color: 'black'}} value={state.phone_number} onChange={(e) => setState({...state, phone_number: e.target.value})} />
-//             <button
-//                 onClick={(e) => {
-//                     e.preventDefault();
-//                     dispatch(Register(state))
-//                 }}
-//             >
-//                 REGISTR
-//             </button>
-//         </form>
-//         <form className='Reg'>
-//             <input type="text" style={{color: 'black'}} value={authVAlue.username} onChange={(e) => setAuthValue({...authVAlue, username: e.target.value})} />
-//             <input type="text" style={{color: 'black'}} value={authVAlue.password} onChange={(e) => setAuthValue({...authVAlue, password: e.target.value})} />
-//             <button
-//                 onClick={(e) => {
-//                     e.preventDefault();
-//                     dispatch(AuthRegister(authVAlue))
-//                 }}
-//             >
-//                 AUTH
-//             </button>
-//         </form>
-//         </>
-//     );
-// };
+    return (
+        <>
+        <form className='Reg'>
+            <input type="text" style={{color: 'black'}} value={state.username} onChange={(e) => setState({...state, username: e.target.value})} />
+            <input type="text" style={{color: 'black'}} value={state.password} onChange={(e) => setState({...state, password: e.target.value})} />
+            <input type="text" style={{color: 'black'}} value={state.password2} onChange={(e) => setState({...state, password2: e.target.value})} />
+            <input type="text" style={{color: 'black'}} value={state.phone_number} onChange={(e) => setState({...state, phone_number: e.target.value})} />
+            <button
+                onClick={(e) => {
+                    e.preventDefault();
+                    dispatch(Register(state))
+                }}
+            >
+                REGISTR
+            </button>
+        </form>
+        <form className='Reg'>
+            <input type="text" style={{color: 'black'}} value={authVAlue.username} onChange={(e) => setAuthValue({...authVAlue, username: e.target.value})} />
+            <input type="text" style={{color: 'black'}} value={authVAlue.password} onChange={(e) => setAuthValue({...authVAlue, password: e.target.value})} />
+            <button
+                onClick={(e) => {
+                    e.preventDefault();
+                    dispatch(AuthRegister(authVAlue))
+                }}
+            >
+                AUTH
+            </button>
+        </form>
+        </>
+    );
+};
 
-// export default Reg;
+export default Reg;
