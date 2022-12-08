@@ -1,0 +1,35 @@
+.css-ciy9n4-MuiPaper-root-MuiAppBar-root {
+    display: none !important;
+}
+
+.css-18sg6k4-MuiPaper-root-MuiDrawer-paper {
+    background-color: #202020 !important;
+}
+
+.css-hyum1k-MuiToolbar-root {
+    background-color: #000000;
+}
+
+.css-1dvstpp-MuiTypography-root {
+    font-family: 'Roboto Condensed', sans-serif !important;
+    font-size: 55px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+}
+
+.css-1ei1svh-MuiButtonBase-root-MuiIconButton-root svg {
+    width: 40px !important;
+    height: 40px !important;
+    margin: 0px !important;
+    transition: all .3s;
+}
+
+.css-1ei1svh-MuiButtonBase-root-MuiIconButton-root svg:hover {
+    fill: #3786ff;
+} 
+
+@media (max-width: 1025px) {
+    .css-ciy9n4-MuiPaper-root-MuiAppBar-root {
+        display: block !important;
+    }
+}
