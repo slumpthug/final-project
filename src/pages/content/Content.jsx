@@ -5,6 +5,7 @@ import AboutUs from '../aboutUs-page/AboutUsPage';
 import Footer from '../../components/footer/Footer'
 import RulesPage from '../rules-page/RulesPage';
 import PricePage from '../price-page/PricePage';
+import FoodZone from '../foodZone-page/FoodZone';
 
 const Content = () => {
     return (
@@ -16,6 +17,7 @@ const Content = () => {
 
                 <Route path='/rules' element={ <RulesPage/> } />
                 <Route path='/price' element={ <PricePage/> } />
+                <Route path='/foodzone' element={ <FoodZone/> } />
             </Routes>
             <Footer/>
         </div>
