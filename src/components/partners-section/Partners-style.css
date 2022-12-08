@@ -1,0 +1,40 @@
+.Partners {
+    padding: 100px 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Partners__img img {
+    width: 100%;
+    opacity: .4;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+.Partners__img:hover img {
+    opacity: 1;
+}
+
+.swiper-slide {
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+  
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
