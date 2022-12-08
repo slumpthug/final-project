@@ -23,3 +23,152 @@ a {
   text-decoration: none;
 }
 
+.Main__title-cont {
+  margin-bottom: 60px;
+}
+
+.Main__overtitle {
+  font-size: 18px;
+  color: #3786ff;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  /* font-family: 'Press Start 2P', cursive; */
+}
+
+.Main__title {
+  font-size: 56px;
+  line-height: 1.1em;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  /* font-family: 'Press Start 2P', cursive; */
+}
+
+.Main__text {
+  max-width: 780px;
+  color: #848484;
+  font-size: 20px;
+  line-height: 1.7em;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.Rooms__title {
+  font-size: 26px;
+  color: #3786ff;
+  font-weight: 400;
+  margin-bottom: 50px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.line {
+  border-top: 1px solid #302f2f;
+  margin-bottom: 35px;
+}
+
+.Price__title {
+  font-size: 30px;
+  line-height: 1.2em;
+  text-align: left;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+th {
+  font-size: 20px;
+font-weight: bold;
+padding: 18px;
+background: url('file:///C:/Users/User/Desktop/Front-end/makets/project-maket/gamon/images/background/3.jpg');
+border: 1px solid #2e2d2d;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+td {
+  font-size: 16px;
+  padding: 18px;
+  border: 1px solid #2e2d2d;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+td:first-child {
+  font-weight: bold;
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: #000000;
+}
+
+@keyframes bottom-to-top {
+  0% {
+      transform: translateY( 0px);
+  }
+  100% {
+      transform: translateY( -8px);
+  }
+}
+
+@keyframes loader {
+  0% {
+      transform: translateX( 0%);
+  }
+  100% {
+      transform: translateX( -100%);
+  }
+}
+
+@media (max-width: 1025px) {
+  .Main__overtitle {
+      font-size: 16px;
+  }
+  
+  .Main__title {
+      font-size: 36px;
+  }
+}
+
+.loader {
+  position: relative;
+}
+
+.loader::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #3786ff;
+  z-index: 100;
+  transition: all .3s;
+  animation: loader .7s ease-in-out alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.loader::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  z-index: 100;
+  transition: all .3s;
+  animation: loader .4s ease-in-out alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
