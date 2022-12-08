@@ -7,6 +7,7 @@ import RulesPage from '../rules-page/RulesPage';
 import PricePage from '../price-page/PricePage';
 import FoodZone from '../foodZone-page/FoodZonePage';
 import ContactsPage from '../contacts-page/ContactsPage';
+import BookingPage from '../booking-page/BookingPage';
 
 const Content = () => {
     return (
@@ -15,7 +16,7 @@ const Content = () => {
             <Routes>
                 <Route path='/' element={ <AboutUs/> }/>
                 <Route path='/aboutus' element={ <AboutUs/> } />
-
+                <Route path='/booking' element={ <BookingPage/> } />
                 <Route path='/rules' element={ <RulesPage/> } />
                 <Route path='/price' element={ <PricePage/> } />
                 <Route path='/foodzone' element={ <FoodZone/> } />

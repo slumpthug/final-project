@@ -51,7 +51,9 @@ const Header = () => {
                                 </Link>
                             </li>
                             <li>
-                                <a href="#">Галерея</a>
+                                <Link to="booking" style={{ textDecoration: 'none' }}>
+                                    <a className={pathname.includes('booking') || pathname === '/' ? 'Header__menu-active-link' : ''}>Бронь</a>
+                                </Link>
                             </li>
                             <li>
                                 <Link to="rules" style={{ textDecoration: 'none' }}>
