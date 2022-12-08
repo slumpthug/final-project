@@ -1,0 +1,14 @@
+.Price {
+    padding: 100px 15px 0px 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.Price__title_stadium {
+    color: #6973ff;
+}
+
+.Price__title_VIP {
+    color: #b8860b;
+}
