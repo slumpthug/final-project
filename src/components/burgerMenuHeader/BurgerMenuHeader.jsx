@@ -117,42 +117,42 @@ export default function PersistentDrawerRight() {
             <ListItem disablePadding>
               <ListItemButton>
                 <Link to="aboutus" style={{ textDecoration: 'none' }}>
-                    About us
+                    О нас
                 </Link>
               </ListItemButton>
             </ListItem>
             <ListItem disablePadding>
               <ListItemButton>
-                <Link to="gallery" style={{ textDecoration: 'none' }}>
-                    Gallery
+                <Link to="booking" style={{ textDecoration: 'none' }}>
+                    Бронь
                 </Link>
               </ListItemButton>
             </ListItem>
             <ListItem disablePadding>
               <ListItemButton>
-                <Link to="matches" style={{ textDecoration: 'none' }}>
-                    matches
+                <Link to="rules" style={{ textDecoration: 'none' }}>
+                    Правила
                 </Link>
               </ListItemButton>
             </ListItem>
             <ListItem disablePadding>
               <ListItemButton>
                 <Link to="price" style={{ textDecoration: 'none' }}>  
-                    price
+                    Цены
                 </Link>
               </ListItemButton>
             </ListItem>
             <ListItem disablePadding>
               <ListItemButton>
                 <Link to="foodzone" style={{ textDecoration: 'none' }}>  
-                    foodzone
+                    Food зона
                 </Link>
               </ListItemButton>
             </ListItem>
             <ListItem disablePadding>
               <ListItemButton>
                 <Link to="contact" style={{ textDecoration: 'none' }}>  
-                    contact
+                    Контакты
                 </Link>
               </ListItemButton>
             </ListItem>
