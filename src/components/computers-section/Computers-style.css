@@ -1,0 +1,58 @@
+.Computers {
+    padding: 100px 15px 0px 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.Matches__card-range {
+    border: 1px solid #2e2d2d;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.Matches__card-filter {
+    background: url('file:///C:/Users/User/Desktop/Front-end/makets/project-maket/gamon/images/background/3.jpg') no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #2e2d2d;
+}
+
+.Matches__card-filter li {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.Matches__card-filter li a {
+    position: relative;
+    padding: 18px 58px;
+    display: inline-block;
+    font-size: 16px;
+    color: #848484;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    z-index: 1;
+    transition: all .3s;
+}
+
+.Matches__card-filter li a:hover {
+    color: #ffffff;
+}
+
+.Matches__card {
+    width: 10%;
+    height: 18%;
+    background-color: #3786ff;
+    border: 1px solid #000000;
+    transition: all .3s;
+}
+
+.Matches__card:hover {
+    background-color: #000000;
+}
