@@ -71,7 +71,9 @@ const Header = () => {
                                 </Link>
                             </li>
                             <li>
-                                <a href="#">Контакты</a>
+                                <Link to="contacts" style={{ textDecoration: 'none' }}>
+                                    <a className={pathname.includes('contacts') ? 'Header__menu-active-link' : ''}>Контакты</a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
