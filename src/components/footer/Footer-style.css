@@ -1,0 +1,112 @@
+.Footer {
+    background: url("file:///C:/Users/User/Desktop/Front-end/makets/project-maket/gamon/images/background/6.png") no-repeat center;
+    background-size: cover;
+    /* background-attachment: fixed; */
+}
+
+.Footer-top__cont {
+    padding: 100px 15px 20px 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.Footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.Footer__title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.Footer-top__menu {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.Footer-top__menu li a {
+    color: #848484;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+.Footer-top__menu li:hover a {
+    color: #ffffff;
+}
+
+.Footer__anchor-up {
+    position: relative;
+    padding: 10px 10px 7px 10px;
+    background-color: #3786ff;
+    transition: all .3s;
+}
+
+.Footer__anchor-up_adap {
+    display: none;
+}
+
+.Footer__anchor-up:hover {
+    background-color: #ffffff;
+}
+
+.Footer__anchor-up:hover .css-1xjn9qs-MuiSvgIcon-root {
+    fill: #3786ff;
+}
+
+.Footer-bottom {
+    background: url("file:///C:/Users/User/Desktop/Front-end/makets/project-maket/gamon/images/background/3.jpg") no-repeat center;
+    background-size: cover;
+    border-top: 1px solid #302f2f;
+}
+
+.Footer-bottom__cont {
+    padding: 20px 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 30px;
+}
+
+.Footer__copyright {
+    color: #848484;
+    font-size: 15px;
+}
+
+@media (max-width: 1025px) {
+    .Footer__anchor-up {
+        display: none;
+    }
+
+    .Footer__anchor-up_adap {
+        display: block;
+    }
+}
+
+@media (max-width: 675px) {
+    .Footer-top__menu {
+        display: block;
+    }
+    
+    .Footer-bottom__cont {
+        padding: 20px 15px;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 15px;
+    }
+}
