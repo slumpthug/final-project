@@ -55,7 +55,7 @@ const Header = () => {
                             </li>
                             <li>
                                 <Link to="rules" style={{ textDecoration: 'none' }}>
-                                    <a className={pathname.includes('rulespage') ? 'Header__menu-active-link' : ''}>Правила</a>
+                                    <a className={pathname.includes('rules') ? 'Header__menu-active-link' : ''}>Правила</a>
                                 </Link>
                             </li>
                         </ul>
