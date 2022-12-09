@@ -1,21 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import './Computers-style.css';
 import axios from 'axios';
-import ComputersCard from './computersCard/ComputersCard';
 
 const Computers = () => {
-    const [comp, setComp] = useState([])
+    const [comps, setComps] = useState([]);
 
-    const getComp = async () => {
-        const { data } = await axios.get('http://roywest3.pythonanywhere.com/api/v1/computer-list/')
-        setComp(data);
-      }
-
-      useEffect(() => {
-        getComp()
-      }, [setComp]);
-
-      console.log(comp);
+    useEffect(() => {
+        axios
+            .get('http://roywest3.pythonanywhere.com/api/v1/computer-list/')
+            .then(data => {
+                setComps(data.data);
+            })
+    }, []);
 
     return (
         <div className='Computers'>
@@ -31,9 +27,13 @@ const Computers = () => {
                     </li>
                 </ul>
             <div className="Computers__card-range">
-                {
-                    comp.map(({ id, booking_time, number, additional_description, is_busy, room}) => <ComputersCard key={id} booking_time={booking_time} number={number} additional_description={additional_description} is_busy={is_busy} room={room}/> )
-                }
+                { comps.map(comp => {
+                    return (
+                        <>
+                            <p style={{border: '1px solid #333333'}}>{comp.number}</p>
+                        </>
+                    )
+                })}
             </div>
         </div>
     );
