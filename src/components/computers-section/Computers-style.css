@@ -38,11 +38,24 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     text-decoration: none;
+    border: 1px solid #000000;
     z-index: 1;
     transition: all .3s;
 }
 
 .Computers__card-filter li a:hover {
     color: #ffffff;
+    border: 1px solid #333333;
+    border-bottom: none;
+    border-top: none;
 }
 
+.Computers__card-range p {
+    padding: 39px;
+    border: 1px solid #333333;
+    transition: all .3s;
+}
+
+.Computers__card-range p:hover {
+    background-color: #3786ff;
+}

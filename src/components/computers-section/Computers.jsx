@@ -17,20 +17,20 @@ const Computers = () => {
         <div className='Computers'>
             <ul className="Computers__card-filter">
                     <li>
-                        <a href="#">All Matches</a>
+                        <a href="#">Общий зал</a>
                     </li>
                     <li>
-                        <a href="#">Upcoming matches</a>
+                        <a href="#">Комфорт зал</a>
                     </li>
                     <li>
-                        <a href="#">Recent results</a>
+                        <a href="#">VIP зал</a>
                     </li>
                 </ul>
             <div className="Computers__card-range">
                 { comps.map(comp => {
                     return (
                         <>
-                            <p style={{border: '1px solid #333333'}}>{comp.number}</p>
+                            <p>{comp.number}</p>
                         </>
                     )
                 })}
