@@ -1,7 +1,19 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './FoodPrice-style.css';
+import axios from 'axios';
 
 const FoodPrice = () => {
+
+    const [foodPrice, setFoodPrice] = useState([]);
+
+    useEffect(() => {
+        axios
+            .get('http://roywest3.pythonanywhere.com/api/v1/food-list/')
+            .then(data => {
+                console.log(data);
+            })
+    }, []);
+
     return (
         <div className='FoodPrice'>
             <h3 className='Rooms__title'>Menu</h3>
