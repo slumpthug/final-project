@@ -42,7 +42,7 @@ const Header = () => {
             </div>
             <div className="Header-lower">
                 <div className="Header-lower__cont">
-                    <h1 className='Header__logo'>GAMON</h1>
+                    <h1 className='Header__logo'>NO NAME</h1>
                     <div className='Header__menu-cont'>
                         <ul className='Header__menu'>
                             <li>
