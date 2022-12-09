@@ -85,10 +85,10 @@ table {
 
 th {
   font-size: 20px;
-font-weight: bold;
-padding: 18px;
-background: url('file:///C:/Users/User/Desktop/Front-end/makets/project-maket/gamon/images/background/3.jpg');
-border: 1px solid #2e2d2d;
+  font-weight: bold;
+  padding: 18px;
+  background: url('file:///C:/Users/User/Desktop/Front-end/makets/project-maket/gamon/images/background/3.jpg');
+  border: 1px solid #2e2d2d;
   text-align: left;
   text-transform: uppercase;
 }
@@ -103,6 +103,10 @@ td {
 
 td:first-child {
   font-weight: bold;
+  text-align: left;
+}
+
+td:nth-child(2) {
   text-align: left;
 }
 
