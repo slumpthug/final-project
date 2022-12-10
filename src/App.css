@@ -141,9 +141,9 @@ tr:nth-child(even) {
       font-size: 36px;
   }
 
-  .App {
+  /* .App {
     margin-top: 88px;
-  }
+  } */
 }
 
 .loader {

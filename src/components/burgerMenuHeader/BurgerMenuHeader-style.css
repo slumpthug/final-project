@@ -1,3 +1,7 @@
+/* .css-ciy9n4-MuiPaper-root-MuiAppBar-root {
+    
+} */
+
 .css-ciy9n4-MuiPaper-root-MuiAppBar-root {
     display: none !important;
 }
@@ -17,11 +21,36 @@
     text-transform: uppercase !important;
 }
 
+.css-78trlr-MuiButtonBase-root-MuiIconButton-root {
+    padding: 0 !important;
+}
+
+.css-i4bv87-MuiSvgIcon-root {
+    width: 30px !important;
+    height: 30px !important;
+    margin: 0px !important;
+}
+
 .css-1ei1svh-MuiButtonBase-root-MuiIconButton-root svg {
     width: 40px !important;
     height: 40px !important;
     margin: 0px !important;
     transition: all .3s;
+}
+
+.css-9mgopn-MuiDivider-root {
+    display: none !important;
+}
+
+.css-16ac5r2-MuiButtonBase-root-MuiListItemButton-root {
+    border-top: 1px solid #333 !important;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.css-16ac5r2-MuiButtonBase-root-MuiListItemButton-root:last-child {
+    border-top: 1px solid #333 !important;
+    border-bottom: 1px solid #333 !important;
 }
 
 .css-1ei1svh-MuiButtonBase-root-MuiIconButton-root svg:hover {
