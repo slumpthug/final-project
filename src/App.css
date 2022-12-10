@@ -140,6 +140,10 @@ tr:nth-child(even) {
   .Main__title {
       font-size: 36px;
   }
+
+  .App {
+    margin-top: 88px;
+  }
 }
 
 .loader {
