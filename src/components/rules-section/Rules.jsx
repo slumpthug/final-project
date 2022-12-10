@@ -17,41 +17,43 @@ const Rules = () => {
     return (
         <div className='Rules'>
             <h3 className='Rooms__title'>Общие положения:</h3>
-            { rules.filter(rule => rule.category == ("ОБЩИЕ ПОЛОЖЕНИЯ:")).map(rule => {
-                return (
-                    <>
-                    <ol className='Rules__menu'>
-                        <li>
-                            {rule.name}
-                        </li>
-                    </ol>
-                    </>
-                )
-            })}
+            <ol className='Rules__menu'>
+                { rules.filter(rule => rule.category == ("ОБЩИЕ ПОЛОЖЕНИЯ:")).map(rule => {
+                    return (
+                        <>
+
+                            <li>
+                                {rule.name}
+                            </li>
+
+                        </>
+                    )
+                })}
+            </ol>
             <h3 className='Rooms__title'>Запрещается:</h3>
-            { rules.filter(rule => rule.category == ('ЗАПРЕЩАЕТСЯ:')).map(rule => {
-                return (
-                    <>
-                    <ol className='Rules__menu'>
-                        <li>
-                            {rule.name}
-                        </li>
-                    </ol>
-                    </>
-                )
-            })}
+            <ol className='Rules__menu'>
+                { rules.filter(rule => rule.category == ('ЗАПРЕЩАЕТСЯ:')).map(rule => {
+                    return (
+                        <>
+                            <li>
+                                {rule.name}
+                            </li>
+                        </>
+                    )
+                })}
+            </ol>
             <h3 className='Rooms__title'>Гости имеют право:</h3>
-            { rules.filter(rule => rule.category == ('ГОСТИ ИМЕЮТ ПРАВО:')).map(rule => {
-                return (
-                    <>
-                    <ol className='Rules__menu'>
-                        <li>
-                            {rule.name}
-                        </li>
-                    </ol>
-                    </>
-                )
-            })}
+            <ol className='Rules__menu'>
+                { rules.filter(rule => rule.category == ('ГОСТИ ИМЕЮТ ПРАВО:')).map(rule => {
+                    return (
+                        <>
+                            <li>
+                                {rule.name}
+                            </li>
+                        </>
+                    )
+                })}
+            </ol>
         </div>
     );
 };
