@@ -65,6 +65,7 @@ const DrawerHeader = styled('div')(({ theme }) => ({
 }));
 
 export default function PersistentDrawerRight() {
+  const { pathname } = useLocation();
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
 
@@ -117,42 +118,42 @@ export default function PersistentDrawerRight() {
             <ListItem disablePadding>
               <ListItemButton>
                 <Link to="aboutus" style={{ textDecoration: 'none' }}>
-                    О нас
+                  <a className={pathname.includes('aboutus') || pathname === '/' ? 'Burger-menu-active-link' : ''}>О нас</a>
                 </Link>
               </ListItemButton>
             </ListItem>
             <ListItem disablePadding>
-              <ListItemButton>
+              <ListItemButton >
                 <Link to="booking" style={{ textDecoration: 'none' }}>
-                    Бронь
+                  <a className={pathname.includes('booking') ? 'Burger-menu-active-link' : ''}>Бронь</a>
                 </Link>
               </ListItemButton>
             </ListItem>
             <ListItem disablePadding>
               <ListItemButton>
                 <Link to="rules" style={{ textDecoration: 'none' }}>
-                    Правила
+                  <a className={pathname.includes('rules') ? 'Burger-menu-active-link' : ''}>Правила</a>
                 </Link>
               </ListItemButton>
             </ListItem>
             <ListItem disablePadding>
               <ListItemButton>
                 <Link to="price" style={{ textDecoration: 'none' }}>  
-                    Цены
+                  <a className={pathname.includes('price') ? 'Burger-menu-active-link' : ''}>Цены</a>
                 </Link>
               </ListItemButton>
             </ListItem>
             <ListItem disablePadding>
               <ListItemButton>
                 <Link to="foodzone" style={{ textDecoration: 'none' }}>  
-                    Food зона
+                  <a className={pathname.includes('foodzone') ? 'Burger-menu-active-link' : ''}>Food зона</a>
                 </Link>
               </ListItemButton>
             </ListItem>
             <ListItem disablePadding>
               <ListItemButton>
-                <Link to="contact" style={{ textDecoration: 'none' }}>  
-                    Контакты
+                <Link to="contacts" style={{ textDecoration: 'none' }}>  
+                  <a className={pathname.includes('contacts') ? 'Burger-menu-active-link' : ''}>Контакты</a>
                 </Link>
               </ListItemButton>
             </ListItem>

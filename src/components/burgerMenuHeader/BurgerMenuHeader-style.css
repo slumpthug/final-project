@@ -57,6 +57,13 @@
     fill: #3786ff;
 } 
 
+.Burger-menu-active-link {
+    color: #3786ff;
+    border-left: 3px solid #3786ff !important;
+    padding-left: 3px;
+    transition: all .3s;
+}
+
 @media (max-width: 1025px) {
     .css-ciy9n4-MuiPaper-root-MuiAppBar-root {
         display: block !important;
