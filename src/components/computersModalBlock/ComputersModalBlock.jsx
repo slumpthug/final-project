@@ -28,13 +28,11 @@ const ComputersModalBlock = ({activeModal, setActiveModal}) => {
                     })}
                 </div>
                 { computers.filter(computer => computer.id == ('113')).map(computer => {
-                                    return (
-                                        <>
-
-                                            <div className='computers__desc'>{computer.additional_description}</div>
-
-                                        </>
-                                    )
+                    return (
+                        <>
+                            <div className='computers__desc'>{computer.additional_description}</div>
+                        </>
+                    )
                 })}
             </div>
         </div>
