@@ -26,6 +26,11 @@
     margin-bottom: 10px;
 }
 
+.Footer-top__menu-container {
+    display: flex;
+    column-gap: 20px;
+}
+
 .Footer-top__menu {
     display: flex;
     align-items: center;
@@ -42,6 +47,10 @@
 
 .Footer-top__menu li:hover a {
     color: #ffffff;
+}
+
+.Footer__menu-active-link {
+    color: #ffffff !important;
 }
 
 .Footer__anchor-up {

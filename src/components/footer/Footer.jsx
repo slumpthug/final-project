@@ -1,31 +1,53 @@
 import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp';
 import './Footer-style.css';
 
 const Footer = () => {
+    const { pathname } = useLocation();
+
     return (
         <div className='Footer' id='top'>
             <div className="Footer-top__cont">
                 <div className="Footer-top">
                     <div className="Footer-top__link-cont">
                         <h3 className='Footer__title'>Links</h3>
-                        <ul className='Footer-top__menu'>
-                            <li>
-                                <a href="#">Developments</a>
-                            </li>
-                            <li>
-                                <a href="#">Club information</a>
-                            </li>
-                            <li>
-                                <a href="#">Club history</a>
-                            </li>
-                            <li>
-                                <a href="#">Frequently asked questions</a>
-                            </li>
-                            <li>
-                                <a href="#">Partners</a>
-                            </li>
-                        </ul>
+                        <div className='Footer-top__menu-container'>
+                            <ul className='Footer-top__menu'>
+                                <li>
+                                    <Link to="aboutus" style={{ textDecoration: 'none' }}>
+                                        <a className={pathname.includes('aboutus') ? 'Footer__menu-active-link' : ''} >О нас</a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="booking" style={{ textDecoration: 'none' }}>
+                                        <a className={pathname.includes('booking') ? 'Footer__menu-active-link' : ''} >Бронь</a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="rules" style={{ textDecoration: 'none' }}>
+                                        <a className={pathname.includes('rules') ? 'Footer__menu-active-link' : ''} >Правила</a>
+                                    </Link>
+                                </li>
+                            </ul>
+                            <ul className='Footer-top__menu'>
+                                <li>
+                                    <Link to="price" style={{ textDecoration: 'none' }}>
+                                        <a className={pathname.includes('price') ? 'Footer__menu-active-link' : ''}>Цены</a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="foodzone" style={{ textDecoration: 'none' }}>
+                                        <a className={pathname.includes('foodzone') ? 'Footer__menu-active-link' : ''}>Food зона</a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="contacts" style={{ textDecoration: 'none' }}>
+                                        <a className={pathname.includes('contacts') ? 'Footer__menu-active-link' : ''}>Контакты</a>
+                                    </Link>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <a href="#up" className='Footer__anchor-up'>
                         <KeyboardDoubleArrowUpIcon
