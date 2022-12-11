@@ -35,7 +35,7 @@ const Price = () => {
                         </div>
                     
 
-                            { price.filter(priv => priv.room == (room.id)).map(pri => {
+                            { price.filter(price => price.room == (room.id)).map(price => {
                                 return (
                                     <>
                                         <table>
@@ -47,23 +47,23 @@ const Price = () => {
                                             </thead>
                                             <tr>
                                                 <td>1 час</td>
-                                                <td>{pri.one_hour}</td>
+                                                <td>{price.one_hour}</td>
                                             </tr>
                                             <tr>
                                                 <td>Пакет 3 часа</td>
-                                                <td>{pri.three_hours}</td>
+                                                <td>{price.three_hours}</td>
                                             </tr>
                                             <tr>
                                                 <td>Пакет 5 часов</td>
-                                                <td>{pri.five_hours}</td>
+                                                <td>{price.five_hours}</td>
                                             </tr>
                                             <tr>
                                                 <td>Пакет 7 часов</td>
-                                                <td>{pri.seven_hours}</td>
+                                                <td>{price.seven_hours}</td>
                                             </tr>
                                             <tr>
                                                 <td>Ночь (22:00 - 08:00)</td>
-                                                <td>{pri.night}</td>
+                                                <td>{price.night}</td>
                                             </tr>
                                         </table>
                                     </>
