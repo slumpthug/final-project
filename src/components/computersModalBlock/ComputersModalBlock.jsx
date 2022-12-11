@@ -17,11 +17,11 @@ const ComputersModalBlock = ({activeModal, setActiveModal}) => {
         <div className={activeModal ? 'ComputersModalBlock activeModal' : 'ComputersModalBlock'} onClick={() => setActiveModal(false)}>
             <div className={activeModal ? 'ComputersModalBlock__content activeModal__content' : 'ComputersModalBlock__content'} onClick={(e) => e.stopPropagation()}>
                 <div className="computer__range">
-                    { computers.filter(computer => computer.room == ('1')).map(computer => {
+                    { computers.filter(computer => computer.room == ('3')).map(computer => {
                         return (
                             <>
 
-                                <div className='computer'></div>
+                                <div className={(computer.is_busy == (false)) ? "computer computer_green" : "computer_red"}></div>
                                 
                             </>
                         )

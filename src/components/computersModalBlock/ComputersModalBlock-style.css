@@ -1,5 +1,5 @@
 .ComputersModalBlock {
-    padding: 50px 250px;
+    padding: 20px 15px;
     width: 100vw;
     height: 100vh;
     background-color: rgba(175, 174, 187, 0.195);
@@ -22,6 +22,7 @@
 }
 
 .ComputersModalBlock__content {
+    width: 50vw;
     padding: 30px;
     background-color: #0c0a0a;
     transform: scale(.5);
@@ -43,10 +44,20 @@
 .computer {
     width: 20px;
     height: 20px;
-    background-color: green;
-    /* margin-bottom: 20px; */
     transition: all .3s;
     cursor: pointer;
+}
+
+.computer_green {
+    background-color: gray;
+}
+
+.computer_red {
+    width: 20px;
+    height: 20px;
+    transition: all .3s;
+    cursor: initial;
+    background-color: red;
 }
 
 .computer:hover {
