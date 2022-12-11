@@ -1,8 +1,7 @@
 import React, {useEffect, useState} from 'react';
-import './ComputersModalBlock-style.css';
 import axios from 'axios';
 
-const ComputersModalBlock = ({activeModal, setActiveModal}) => {
+const ComputersModalBlockThree = ({activeModalThree, setActiveModalThree}) => {
     const [computers, setComputers] = useState([]);
 
     useEffect(() => {
@@ -14,8 +13,8 @@ const ComputersModalBlock = ({activeModal, setActiveModal}) => {
     }, [])
 
     return (
-        <div className={activeModal ? 'ComputersModalBlock activeModal' : 'ComputersModalBlock'} onClick={() => setActiveModal(false)}>
-            <div className={activeModal ? 'ComputersModalBlock__content activeModal__content' : 'ComputersModalBlock__content'} onClick={(e) => e.stopPropagation()}>
+        <div className={activeModalThree ? 'ComputersModalBlock activeModal' : 'ComputersModalBlock'} onClick={() => setActiveModalThree(false)}>
+            <div className={activeModalThree ? 'ComputersModalBlock__content activeModal__content' : 'ComputersModalBlock__content'} onClick={(e) => e.stopPropagation()}>
                 <div className="computer__range">
                     { computers.filter(computer => computer.room == ('3')).map(computer => {
                         return (
@@ -27,16 +26,9 @@ const ComputersModalBlock = ({activeModal, setActiveModal}) => {
                         )
                     })}
                 </div>
-                { computers.filter(computer => computer.id == ('113')).map(computer => {
-                    return (
-                        <>
-                            <div className='computers__desc'>{computer.additional_description}</div>
-                        </>
-                    )
-                })}
             </div>
         </div>
     );
 };
 
-export default ComputersModalBlock;
+export default ComputersModalBlockThree;

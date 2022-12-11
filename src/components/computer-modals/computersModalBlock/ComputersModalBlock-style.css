@@ -22,7 +22,7 @@
 }
 
 .ComputersModalBlock__content {
-    width: 50vw;
+    max-width: 50vw;
     padding: 30px;
     background-color: #0c0a0a;
     transform: scale(.5);
