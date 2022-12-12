@@ -48,8 +48,8 @@ const Rules = () => {
                     )
                 })}
             </motion.ol>
-            <h3 className='Rooms__title'>Запрещается:</h3>
-            <ol className='Rules__menu'>
+            <motion.h3 variants={textAnimation} custom={4} className='Rooms__title'>Запрещается:</motion.h3>
+            <motion.ol variants={textAnimation} custom={5} className='Rules__menu'>
                 { rules.filter(rule => rule.category == ('ЗАПРЕЩАЕТСЯ:')).map(rule => {
                     return (
                         <>
@@ -59,9 +59,9 @@ const Rules = () => {
                         </>
                     )
                 })}
-            </ol>
-            <h3 className='Rooms__title'>Гости имеют право:</h3>
-            <ol className='Rules__menu'>
+            </motion.ol>
+            <motion.h3 variants={textAnimation} custom={6} className='Rooms__title'>Гости имеют право:</motion.h3>
+            <motion.ol variants={textAnimation} custom={7} className='Rules__menu'>
                 { rules.filter(rule => rule.category == ('ГОСТИ ИМЕЮТ ПРАВО:')).map(rule => {
                     return (
                         <>
@@ -71,7 +71,7 @@ const Rules = () => {
                         </>
                     )
                 })}
-            </ol>
+            </motion.ol>
         </motion.div>
     );
 };
