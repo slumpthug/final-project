@@ -4,6 +4,7 @@ import axios from 'axios';
 
 const ComputersModalBlock = ({activeModal, setActiveModal}) => {
     const [computers, setComputers] = useState([]);
+    const [busy, setBusy] = useState(false)
 
     useEffect(() => {
         axios
@@ -21,7 +22,7 @@ const ComputersModalBlock = ({activeModal, setActiveModal}) => {
                         return (
                             <>
 
-                                <div className={(computer.is_busy == (false)) ? "computer computer_green" : "computer_red"}></div>
+                                <div /*className={(computer.is_busy == (false)) ? "computer computer_green" : "computer_red"}*/ className={`computer ${busy ? 'computer_busy' : ''}`} onClick={() => setBusy(busy => !busy)}></div>
                                 
                             </>
                         )
