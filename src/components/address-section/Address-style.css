@@ -36,13 +36,6 @@
     color: #3786ff;
 }
 
-.Address__card-subtitle {
-    color: #848484;
-    font-size: 20px;
-    line-height: 1.3em;
-    margin: 10px 0px;
-}
-
 .Address__card-item {
     display: flex;
     flex-direction: column;
