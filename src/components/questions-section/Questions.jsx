@@ -81,7 +81,7 @@ export default function SimpleAccordion() {
                   <Typography
                     sx={{
                       color: '#848484',
-                      fontSize: '16px',
+                      fontSize: '18px',
                       lineHeight: '1.9em',
                     }}
                   >
