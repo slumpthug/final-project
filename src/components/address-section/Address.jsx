@@ -26,7 +26,6 @@ const Address = () => {
             })
     }, [])
 
-
     return (
         <motion.div
          initial='hidden'
