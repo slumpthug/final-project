@@ -1,6 +1,19 @@
 import React, {useEffect, useState} from 'react';
 import './Price-style.css';
 import axios from 'axios';
+import { motion } from 'framer-motion';
+
+const textAnimation = {
+    hidden: {
+        x: -100,
+        opacity: 0,
+    },
+    visible: custom => ({
+        x: 0,
+        opacity: 1,
+        transition: {delay: custom * .1},
+    }),
+}
 
 const Price = () => {
     const [roomList, setRoomList] = useState([]);
@@ -23,7 +36,14 @@ const Price = () => {
     }, []);
 
     return (
-        <div className='Price'>
+        <motion.div 
+         initial='hidden'
+         whileInView='visible'
+         viewport={{ amount: .2, once: true }}
+         
+         variants={textAnimation} custom={2}
+         className='Price'
+        >
             {/* <h3 className='Rooms__title'>Комнаты с компьютерами</h3> */}
 
             { roomList.map(room => {
@@ -32,7 +52,7 @@ const Price = () => {
                         <div>
                             <h2 className={(room.room_type == "Comfort room") ? 'Price__title Price__title_comfort' : (room.room_type == 'Vip room') ? 'Price__title Price__title_VIP' : 'Price__title'}>{room.description}</h2>
                             <h3 className='Price__subtitle'>количество компьютеров: {room.computers_quantity}</h3>
-                        </div>
+                        </div>  
                     
 
                             { price.filter(price => price.room == (room.id)).map(price => {
@@ -72,7 +92,7 @@ const Price = () => {
                     </>
                 );
             })}
-        </div>
+        </motion.div>
     );
 };
 

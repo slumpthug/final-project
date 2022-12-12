@@ -1,14 +1,33 @@
 import React from 'react';
 import './Advantage-style.css';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import { motion } from 'framer-motion';
+
+const textAnimation = {
+    hidden: {
+        x: -100,
+        opacity: 0,
+    },
+    visible: custom => ({
+        x: 0,
+        opacity: 1,
+        transition: {delay: custom * .01},
+    }),
+}
+
 
 const Advantage = () => {
     return (
-        <div className='Advantage'>
-            <div className='Main__title-cont'>
+        <motion.div 
+            initial='hidden'
+            whileInView='visible'
+            viewport={{ amount: .3, once: true }}
+            className='Advantage
+        '>
+            <motion.div className='Main__title-cont' variants={textAnimation} custom={1}>
                 <h1 className='Main__title'>НАШИ ПРЕИМУЩЕСТВА</h1>
-            </div>
-            <ul className='Advantage__menu'>
+            </motion.div>
+            <motion.ul className='Advantage__menu' variants={textAnimation} custom={2}>
                 <li>
                     Клуб общей площадью 2100 м2, 3 этажа, 3 зала: comfort, VIP, standard.
                     <CheckCircleIcon/>
@@ -45,8 +64,8 @@ const Advantage = () => {
                     Режим работы: круглосуточно, без выходных.
                     <CheckCircleIcon/>
                 </li>
-            </ul>
-        </div>
+            </motion.ul>
+        </motion.div>
     );
 };
 
