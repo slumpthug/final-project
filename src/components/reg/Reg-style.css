@@ -1,0 +1,34 @@
+.Reg {
+    padding: 120px 15px;
+    max-width: 1600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.Reg__cont {
+    padding: 40px;
+    width: 500px;
+    margin: 0 auto;
+    background-color: #3786ff;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+}
+
+.Reg__cont input {
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 20px;
+}
+
+.Reg__cont button {
+    padding: 10px 20px;
+    color: black;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    margin: 0 auto;
+}

@@ -13,15 +13,15 @@ export const Register = createAsyncThunk(
     }
 );
 
-export const AuthRegister = createAsyncThunk(
-    'regis/Register',
-    async (obj, {dispatch}) => {
-        const {data} = await axios.post(`http://roywest3.pythonanywhere.com/api/v1/api/token/`, obj)
-        console.log(data)
-        localStorage.setItem("access", JSON.stringify(data.access))
-        localStorage.setItem("refresh", JSON.stringify(data.refresh))
-    }
-);
+// export const AuthRegister = createAsyncThunk(
+//     'regis/Register',
+//     async (obj, {dispatch}) => {
+//         const {data} = await axios.post(`http://roywest3.pythonanywhere.com/api/v1/api/token/`, obj)
+//         console.log(data)
+//         localStorage.setItem("access", JSON.stringify(data.access))
+//         localStorage.setItem("refresh", JSON.stringify(data.refresh))
+//     }
+// );
 
 
 const RegisSlice = createSlice({
