@@ -10,11 +10,13 @@ import FoodZone from '../foodZone-page/FoodZonePage';
 import ContactsPage from '../contacts-page/ContactsPage';
 import BookingPage from '../booking-page/BookingPage';
 import Reg from '../../components/reg/Reg';
+import HeaderTwo from '../../components/headerTwo/HeaderTwo';
 
 const Content = () => {
     return (
         <div className='Content'>
             <Header/>
+            <HeaderTwo/>
             <BurgerMenuHeader/>
             <Routes>
                 <Route path='/' element={ <AboutUs/> }/>
