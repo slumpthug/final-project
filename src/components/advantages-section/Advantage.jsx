@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Advantage-style.css';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import axios from 'axios';
 import { motion } from 'framer-motion';
 
 const textAnimation = {
@@ -17,6 +18,17 @@ const textAnimation = {
 
 
 const Advantage = () => {
+    const [advantages, setAdvantages] = useState([])
+
+    useEffect(() => {
+        axios
+            .get('http://roywest3.pythonanywhere.com/api/v1/advantage-list/')
+            .then (data => {
+                setAdvantages(data.data)
+            })
+    }, [])
+
+
     return (
         <motion.div 
             initial='hidden'
@@ -28,42 +40,16 @@ const Advantage = () => {
                 <h1 className='Main__title'>НАШИ ПРЕИМУЩЕСТВА</h1>
             </motion.div>
             <motion.ul className='Advantage__menu' variants={textAnimation} custom={2}>
-                <li>
-                    Клуб общей площадью 2100 м2, 3 этажа, 3 зала: comfort, VIP, standard.
-                    <CheckCircleIcon/>
-                </li>
-                <li>
-                    240 новейших игровых компьютеров оснащенные игровыми девайсами и комфортными креслами DXRacer.
-                    <CheckCircleIcon/>
-                </li>
-                <li>
-                    16 PS4 Pro с 4к TV и широкими диванами.
-                    <CheckCircleIcon/>
-                </li>
-                <li>
-                    Сцена полностью оборудована для проведения LAN-турниров.
-                    <CheckCircleIcon/>
-                </li>
-                <li>
-                    Зрительская трибуна на 200 человек позволяет с комфортом наблюдать самые интересные матчи на огромных экранах.
-                    <CheckCircleIcon/>
-                </li>
-                <li>
-                    Паркинг для гостей, наслаждайтесь игрой и не беспокойтесь о вашем автомобиле.
-                    <CheckCircleIcon/>
-                </li>
-                <li>
-                    Аккаунты PUBG во всех залах.
-                    <CheckCircleIcon/>
-                </li>
-                <li>
-                    Бесплатный Wi-Fi.
-                    <CheckCircleIcon/>
-                </li>
-                <li>
-                    Режим работы: круглосуточно, без выходных.
-                    <CheckCircleIcon/>
-                </li>
+                { advantages.map(advantage => {
+                    return (
+                        <>
+                            <li>
+                                {advantage.name}
+                                <CheckCircleIcon/>
+                            </li>
+                        </>
+                    )
+                })}
             </motion.ul>
         </motion.div>
     );
