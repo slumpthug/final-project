@@ -24,6 +24,10 @@
 .ComputersModalBlock__content {
     max-width: 50vw;
     padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 15px;
+    /* align-items: center; */
     background-color: #0c0a0a;
     transform: scale(.5);
     transition: all .5s;
@@ -31,6 +35,48 @@
 
 .activeModal__content {
     transform: scale(1);
+}
+
+.ComputersModalBlock__content-left {
+    width: 50%;
+}
+
+.ComputersModalBlock__content-right {
+    width: 50%;
+}
+
+.ComputersModalBlock__content-right h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: yellow;
+}
+
+.ComputersModalBlock__content-right ul {
+    list-style: decimal !important;
+}
+
+.ComputersModalBlock__title {
+    font-size: 40px;
+}
+
+.ComputersModalBlock__title_comfort {
+    color: #6973ff;
+}
+
+.ComputersModalBlock__title_VIP {
+    color: #b8860b;
+}
+
+.computers-rate__range {
+    margin-bottom: 20px;
+    display: flex;
+    column-gap: 10px;
+}
+
+.computer-rate__cont {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
 }
 
 .computer__range {
