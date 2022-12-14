@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import MainButton from '../../main-button/MainButton';
 import axios from 'axios';
 
 const ComputersModalBlockTwo = ({activeModalTwo, setActiveModalTwo}) => {
@@ -44,12 +45,15 @@ const ComputersModalBlockTwo = ({activeModalTwo, setActiveModalTwo}) => {
                     </div>
                 </div>
                 <div className="ComputersModalBlock__content-right">
-                    <h1>Внимание</h1>
-                    <ol>
-                        <li> - Вы можете забронировать не более 6 мест в сутки.</li>
-                        <li> - Невыкупленная бронь автоматически снимается за 10 минут.</li>
-                        <li> - В случае, если количество невыкупленных мест достигнет 3, вы будете заблокированы.</li>
-                    </ol>
+                    <div>
+                        <h1>Внимание</h1>
+                        <ol>
+                            <li> - Вы можете забронировать не более 6 мест в сутки.</li>
+                            <li> - Невыкупленная бронь автоматически снимается за 10 минут.</li>
+                            <li> - В случае, если количество невыкупленных мест достигнет 3, вы будете заблокированы.</li>
+                        </ol>
+                    </div>
+                    <MainButton text="Забронировать"/>
                 </div>
             </div>
         </div>
