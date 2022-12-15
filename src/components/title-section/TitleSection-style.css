@@ -3,7 +3,7 @@
     max-width: 1600px;
     margin: 0 auto;
     text-align: center;
-    background: url('file:///C:/Users/User/Desktop/Front-end/makets/project-maket/gamon/images/background/title-bg.jpg') no-repeat center;
+    background: url('../../assets/bg/title-bg.jpg') no-repeat center;
     background-size: cover;
 }
 .TitleSection__link {
