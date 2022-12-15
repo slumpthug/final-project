@@ -2,7 +2,7 @@ import React from 'react';
 import { Routes, Route } from "react-router-dom";
 import Header from '../../components/header/Header';
 import BurgerMenuHeader from '../../components/burgerMenuHeader/BurgerMenuHeader'
-import AboutUs from '../aboutUs-page/AboutUsPage';
+import AboutUs from '../aboutUS-page/AboutUsPage';
 import Footer from '../../components/footer/Footer'
 import RulesPage from '../rules-page/RulesPage';
 import PricePage from '../price-page/PricePage';
