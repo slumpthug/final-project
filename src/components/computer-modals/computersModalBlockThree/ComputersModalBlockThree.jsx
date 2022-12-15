@@ -1,9 +1,11 @@
 import React, {useEffect, useState} from 'react';
 import MainButton from '../../main-button/MainButton';
 import axios from 'axios';
+import Tooltip from '@mui/material/Tooltip';
 
 const ComputersModalBlockThree = ({activeModalThree, setActiveModalThree}) => {
     const [computers, setComputers] = useState([]);
+    const [busy, setBusy] = useState('');
 
     useEffect(() => {
         axios
@@ -35,11 +37,12 @@ const ComputersModalBlockThree = ({activeModalThree, setActiveModalThree}) => {
                     <div className="computer__range">
                         { computers.filter(computer => computer.room == ('3')).map(computer => {
                             return (
-                                <>
-
-                                    <div className={(computer.is_busy == (false)) ? "computer computer_green" : "computer_red"}></div>
-
-                                </>
+                                <div>
+                                    <span>{computer.number}</span>
+                                    <Tooltip title={computer.additional_description} arrow>
+                                        <button disabled={computer.is_busy == true} className={(busy == computer.id) ? "computer computer_busy" : (computer.is_busy == (true)) ? "computer computer_red" : "computer"} onClick={() => setBusy(computer.id)}></button>
+                                    </Tooltip>
+                                </div>
                             )
                         })}
                     </div>
@@ -48,7 +51,7 @@ const ComputersModalBlockThree = ({activeModalThree, setActiveModalThree}) => {
                     <div>
                         <h1>Внимание</h1>
                         <ol>
-                            <li> - Вы можете забронировать не более 6 мест в сутки.</li>
+                            <li> - Вы можете забронировать не более 6 места в сутки.</li>
                             <li> - Невыкупленная бронь автоматически снимается за 10 минут.</li>
                             <li> - В случае, если количество невыкупленных мест достигнет 3, вы будете заблокированы.</li>
                         </ol>
