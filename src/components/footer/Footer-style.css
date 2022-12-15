@@ -73,7 +73,7 @@
 }
 
 .Footer-bottom {
-    background: url("file:///C:/Users/User/Desktop/Front-end/makets/project-maket/gamon/images/background/3.jpg") no-repeat center;
+    background: url("../../assets/bg/3.jpg") no-repeat center;
     background-size: cover;
     border-top: 1px solid #302f2f;
 }

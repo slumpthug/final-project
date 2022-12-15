@@ -3,9 +3,9 @@ import './Partners-style.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Autoplay } from 'swiper';
 import "swiper/css";
-import logo from 'file:///C:/Users/User/Desktop/Front-end/makets/project-maket/gamon/images/clients/1.png';
-import logoTwo from 'file:///C:/Users/User/Desktop/Front-end/makets/project-maket/gamon/images/clients/2.png';
-import logoThree from 'file:///C:/Users/User/Desktop/Front-end/makets/project-maket/gamon/images/clients/3.png';
+import logo from '../../assets/partners/1.png';
+import logoTwo from '../../assets/partners/2.png';
+import logoThree from '../../assets/partners/3.png';
 import "swiper/css/autoplay";
 
 const Partners = () => {
