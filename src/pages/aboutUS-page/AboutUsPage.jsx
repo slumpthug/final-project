@@ -11,6 +11,7 @@ const Aboutus = () => {
             <Advantage/>
             <SimpleAccordion/>
             <Partners/>
+            
         </div>
     );
 };
